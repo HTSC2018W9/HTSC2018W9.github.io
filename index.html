@@ -2,44 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>海棠小学2018级9班</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
-    </script>
-    <link rel="shortcut icon" href="./五（9）班班徽.jpg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>login</title>
 </head>
-
-<body>
-    <div class="header">
-        <h1>海棠小学2018级9班</h1>
-        <p>欢迎来到我们的网站</p>
-      </div>
-       
-      <div class="navbar">
-        <a href="index.html">首页</a>
-        <a href="about.html">关于我们</a>
-        <a href="login.html" style="text-align: left;">登录</a>
-      </div>
-       
-      <div class="row">
-        <div class="side">
-            <h2>关于我们</h2>
-            <h5>我们的介绍:</h5>
-            <div class="fakeimg" style="height:200px;">在我们五年级时班级中已经有41个人了!</div>
-            <h3>更多内容</h3>
-            <p>我们的照片集</p>
-            <button style="height:100;width:50;"><a href="./img.html">我们的照片集</a></button>
-        </div>
-        <div class="main">
-            <h2>我们的简介</h2>
-            <h5>我们来自哪</h5>
-            <div class="fakeimg"><img src="./Schoolpicture.jpg" width="50%"height="117%"></div>
-            <p>我们在上海市金山区海棠小学。</p>
-            <p>我们从2018年加入了海棠小学,到现在我们已经11岁了。</p>
-        </div>
-      </div>
-      <div class="footer">
-        <h2>底部内容</h2>
-      </div>
+<body><form action="" class="login">
+    <p>Login</p>
+    <input type="text" id="un" placeholder="用户名">
+    <input type="password" id="pw" placeholder="密码">
+    <input type="button" class="btn" value="登  录" onclick="myFunction()">
+</form>
+<script>
+    function myFunction()
+{
+    var un_1=document.getElementById('un').value;
+    var pw_1=document.getElementById('pw').value;
+    if(un_1=="admin",pw_1=='1145141919810')
+    {
+        open('sdss.html');
+        close('login.html');
+    }
+    else
+    {
+        alert('小提示,密码的MD5是32150285b345c48aa3492f9212f61ca2')
+        }
+}
+</script>
+    
 </body>
 </html>
