@@ -149,8 +149,7 @@ main article footer p {
 <script>
     function logout() {
         if (window.confirm('是否退出?')) {
-            open('index.html')
-            close('sdss.html')
+            window.location.href = 'index.html';
         } else {
             return false;
         }
